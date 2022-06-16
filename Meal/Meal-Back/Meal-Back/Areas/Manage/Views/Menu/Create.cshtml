@@ -1,0 +1,39 @@
+﻿@model Menu
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Manage/Views/Shared/_ManageLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Title">Title</label>
+                <input asp-for="Title" class="form-control" placeholder="Title">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Price">Price</label>
+                <input asp-for="Price" class="form-control" placeholder="Price">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="Subtitle">SubTitle</label>
+                <input asp-for="Subtitle" class="form-control" placeholder="Subtitle">
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="FoodBranch">FoodBranch</label>
+                <input asp-for="FoodBranch" class="form-control" placeholder="FoodBranch">
+            </div>
+            
+            <div class="form-group col-md-4">
+                <label asp-for="Photo"></label>
+                <input type="file" asp-for="Photo" class="form-control" placeholder="Photo">
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</div>
+

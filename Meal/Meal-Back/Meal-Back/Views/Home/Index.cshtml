@@ -1,0 +1,455 @@
+﻿@model HomeVM
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <!-- Header -->
+        <section>
+            <div class="first " style="background-image: url(~/assets/image/main.webp);">
+                <nav class=" pt-5 d-flex justify-content-center">
+                    <div class="index   text-xl-center">
+                        <a asp-area="Manage" asp-controller="Menu" asp-action="Index" class="fs-3 text-decoration-none text-dark fw-bold">M</a>
+                    </div>
+                </nav>
+                <div class="text text-xxl-center">
+                    <h1 class="text-white ">Welcome to Meal</h1>
+                    <button class="btn-reserve rounded-2 btn-outline-light  text-white ">Reserve A Table</button>
+                </div>
+            </div>
+        </section>
+        <!-- Best Food -->
+        <section>
+            <div class="container">
+                <div class="text-xxl-center pt-5 ">
+                    <h3 class="fs-1">Find Your Best Food</h3>
+                    <p>Free Website Template For Restaurants Made by Colorlib</p>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 pt-3">
+                    <div class="col" style="background-image: url(~/assets/image/grid1.webp);">
+                    </div>
+                    <div class="col text-xxl-center">
+                        <h6 class="text-success">VEGIES</h6>
+                        <h5>BEEF EMPANADAS</h5>
+                        <div class="container pt-2">
+                            <h3>
+                                Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                                language ocean.
+                            </h3>
+                        </div>
+                        <a href="#" class="text-decoration-none text-dark ">
+                            Learn More<i class="bi bi-arrow-right-short text-dark"></i>
+                        </a>
+                    </div>
+
+                    <div class="col" style="background-image: url(~/assets/image/grid2.webp);">
+                    </div>
+                    <div class="col text-xxl-center">
+                        <h6 class="text-success">FOOD</h6>
+                        <h5>BUTTERMILK CHICKEN JIBARITOS</h5>
+                        <div class="container pt-2">
+                            <h3>
+                                A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.
+                            </h3>
+                        </div>
+                        <a href="#" class="text-decoration-none text-dark ">
+                            Learn More<i class="bi bi-arrow-right-short text-dark"></i>
+                        </a>
+                    </div>
+                    <div class="col" style="background-image: url(~/assets/image/grid3.webp);">
+                    </div>
+                    <div class="col text-xxl-center">
+                        <h6 class="text-success">FOOD</h6>
+                        <h5>CHICKEN CHIMICHURRI CROQUETTES</h5>
+                        <div class="container pt-2">
+                            <h3>
+                                Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic life.
+                            </h3>
+                        </div>
+                        <a href="#" class="text-decoration-none text-dark ">
+                            Learn More<i class="bi bi-arrow-right-short text-dark"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- The Restaurant -->
+        <section class="w-100 vh-100 pt-5">
+            <div style="margin: 0 32%;">
+                <h3 class="fs-1">The Restaurant</h3>
+                <p class="fs-5 text-success">
+                    Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.
+                </p>
+                <p class="fs-5 text-success">
+                    It is a paradisematic country, in which roasted parts of sentences fly into
+                    your mouth.
+                </p>
+            </div>
+
+            <img src="~/assets/image/hero.webp" width="100%" height="700" alt="">
+
+
+        </section>
+        <!-- Meet The Chefs -->
+        <section class="w-100 vh-100   pt-5 ">
+            <h3 class="text-xxl-center fs-1">Meet The Chefs</h3>
+            <div class="container d-flex flex-row p-5 gap-2">
+                <div class=" w-50 h-100 d-flex flex-column justify-content-center align-items-center">
+                    <rect width="100%" height="100%" fill="#777">
+
+                        <img src="~/assets/image/chef1.webp" width="200" height="200" alt="">
+                    </rect>
+
+                    <h3>Daniel Graham</h3>
+                    <span>MASTER CHEF</span>
+                    <p class="fs-4">
+                        Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.
+                    </p>
+                    <p class="fs-4">
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                        language
+                        ocean. It is a paradisematic country.
+                    </p>
+                    <div class="d-flex flex-row fs-4 pt-5 text-success">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+
+                <div class=" w-50 h-100 d-flex flex-column justify-content-center align-items-center">
+                    <img src="~/assets/image/chef2.webp" width="200" height="200" alt="">
+                    <h3>Nick Browning</h3>
+                    <span>MASTER CHEF</span>
+                    <p class="fs-4">
+                        Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.
+                    </p>
+                    <p class="fs-4">
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                        language
+                        ocean. It is a paradisematic country.
+                    </p>
+                    <div class="d-flex flex-row fs-4 pt-5 text-success ">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Menu -->
+        <section>
+            <div class="container">
+                <div class="text-xxl-center">
+                    <h2>Menu</h2>
+                    <p>Free Website Template For Restaurants Made by Colorlib</p>
+                    @foreach (var item in Model.FoodBranches)
+                    {
+                         <span data-target="all" class="fs-5 d">ALL</span>
+                         <span data-target="@item.BranchName" class="fs-5 d">@item.BranchName</span>
+                         
+
+                    }
+                </div>
+                <div class="d-flex flex-column">
+                    @foreach (var item in Model.Menus)
+                    {
+                        <div data-id="@item.FoodBranch" class=" d-flex flex-row fg" style="margin: 3% 25%;">
+                            <div class="rounded-circle w-25">
+                                <img src="~/assets/image/@item.Image" width="110" height="110" alt="">
+                            </div>
+                            <div>
+                                <span class="float-end">$@item.Price</span>
+                                <h4>@item.Title</h4>
+                                <p>@item.Subtitle.</p>
+                            </div>
+                        </div>
+                        <hr style="margin: 0 25%;">
+                    }
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Other Service -->
+        <section>
+            <div class="container">
+                <div class="container px-4 py-5" id="featured-3">
+                    <h2 class="pb-2 border-bottom text-xxl-center">Other Services</h2>
+                    <p class="text-xxl-center">Free Website Template For Restaurants Made by Colorlib</p>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="feature col">
+                            <div class="feature-icon d-inline-flex align-items-center justify-content-center  text-muted fs-1 mb-3">
+                                <i class="bi bi-hammer"></i>
+                            </div>
+                            <h2>Quality Cuisine</h2>
+                            <p>
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.
+                            </p>
+
+                        </div>
+                        <div class="feature col">
+                            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-muted fs-1 mb-3">
+                                <i class="bi bi-archive"></i>
+                            </div>
+                            <h2>Featured title</h2>
+                            <p>
+                                Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.
+                            </p>
+
+                        </div>
+                        <div class="feature col">
+                            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-muted fs-1 mb-3">
+                                <i class="bi bi-device-hdd"></i>
+                            </div>
+                            <h2>Featured title</h2>
+                            <p>
+                                Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.
+                            </p>
+
+                        </div>
+                        <div class="feature col">
+                            <div class="feature-icon d-inline-flex align-items-center justify-content-center  text-muted fs-1 mb-3">
+                                <i class="bi bi-device-hdd"></i>
+                            </div>
+                            <h2>Featured title</h2>
+                            <p>
+                                Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.
+                            </p>
+
+                        </div>
+                        <div class="feature col">
+                            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-muted fs-1 mb-3">
+                                <i class="bi bi-device-hdd"></i>
+                            </div>
+                            <h2>Featured title</h2>
+                            <p>
+                                Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.
+                            </p>
+
+                        </div>
+                        <div class="feature col">
+                            <div class="feature-icon d-inline-flex align-items-center justify-content-center  text-muted fs-1 mb-3">
+                                <i class="bi bi-device-hdd"></i>
+                            </div>
+                            <h2>Featured title</h2>
+                            <p>
+                                Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ReserVation -->
+        <section>
+            <div class="container">
+                <div class="text-xxl-center">
+                    <h2>Reservation</h2>
+                    <p>Free Website Template For Restaurants Made by Colorlib</p>
+                </div>
+                <div class="row g-3 pt-5">
+                    <div class="col-sm-4">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label for="lastName" class="form-label"> Email</label>
+                        <input type="email" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label for="lastName" class="form-label">Phone </label>
+                        <input type="number" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="country" class="form-label">Number of Persons</label>
+                        <select class="form-select" id="country" required="">
+                            <option value="">Choose...</option>
+                            <option>1 person</option>
+                            <option>2 person</option>
+                            <option>3 person</option>
+                            <option>4 person</option>
+
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="date" class="form-control" id="address" placeholder="1234 Main St" required="">
+                        <div class="invalid-feedback">
+                            Please enter your shipping address.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="country" class="form-label">Time</label>
+                        <select class="form-select" id="country" required="">
+                            <option value="">12:00 pm</option>
+                            <option>21:pm</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+                    <button class="bg-warning btn ">Reserve Now</button>
+                </div>
+        </section>
+        <!-- Get In Touch -->
+        <section>
+            <div class="container pt-5">
+                <div class="text-xxl-center">
+                    <h2>Get In Touch</h2>
+                </div>
+                <div class="row g-3 pt-5">
+                    <div class="col-sm-4">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label for="lastName" class="form-label"> Email</label>
+                        <input type="email" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label for="lastName" class="form-label">Phone </label>
+                        <input type="number" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                    <div class="col-md-12 ">
+                        <label for="">Message</label>
+                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <button class="btn bg-warning">Send Message</button>
+                </div>
+            </div>
+        </section>
+        <!-- Map -->
+        <section class="pt-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.748317523108!2d49.813257115705156!3d40.37010466639721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc397d94dc3%3A0x617bc46b47244c00!2sAzerbaijan%20Technical%20University!5e0!3m2!1sen!2s!4v1655379608253!5m2!1sen!2s"
+                    width="1900" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>About Meal</h5>
+                        <p>
+                            The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
+                            Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
+                        </p>
+                        <button class="bg-warning btn">Read More</button>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column  ">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        Follow Us
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-warning" href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li class="ms-3"><a class="link-warning" href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li class="ms-3"><a class="link-warning" href="#"><i class="bi bi-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© Mahammad</p>
+
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="~/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
